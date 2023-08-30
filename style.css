@@ -16,7 +16,7 @@ html, body{
     background-color: lime;
     border-radius: 50%;
     position: fixed;
-    
+      
    }
 #nav{
   height:110px;
@@ -85,5 +85,64 @@ video{
 }
 
 
+#scroller{
+    /*background-color: brown;*/
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+#scroller-in{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#scroller h4{
+    display:inline-block;
+    font-size: 140px;
+    font-weight: 900;
+    font-family: gilroy;
+    margin-right: 10px;
+    transition: all linear ;
+    color: transparent;
+    -webkit-text-stroke: 2px limegreen;
+}
+
+#about-us{
+    height:40vh;
+    width:100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about-us img{
+   height: 220px;
+   width: 220px;
+   border-radius: 20px;
+   object-fit: cover;
+}
+
+#about-us-in{
+    width: 40%;
+    text-align: center;
+
+}
+#about-us-in h3{
+   font-size: 50px;
+   font-weight: 800;
+   margin-bottom: 40px;
+
+}
 
 
+#about-us-in p{
+    font-size: 20px;
+    line-height: 20px;
+}
