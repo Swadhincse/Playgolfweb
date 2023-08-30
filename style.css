@@ -10,8 +10,16 @@ html, body{
     height :100%;
     width:100%;
 }
+#cursor{
+    height:25px;
+    width:25px;
+    background-color: lime;
+    border-radius: 50%;
+    position: fixed;
+    
+   }
 #nav{
-  height:150px;
+  height:110px;
   width: 100%;
   /*background-color: rgb(40, 187, 231);*/ 
   display: flex;
@@ -52,13 +60,30 @@ video{
     flex-direction: column;
 }
 
-#page h1{
+#page1 h1{
     font-size: 140px;
     font-weight: 900;
+    position: relative;
 }
-#page h2{
+#page1 h1::before{
+    content: "EAT. DRINK .PLAY";
+    position: absolute;
+    color: black;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke:2px red ;
+    
+}
+#page1 h2{
     font-size: 30px;
-    font-weight: 900;
+    font-weight: 800;  
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
+#page1 p{
+ 
+}
+
+
 
 
